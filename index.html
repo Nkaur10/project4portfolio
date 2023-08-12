@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/63e6cbca42.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo1.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#ABOUT">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" id="fas" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" id="fas" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Web Developer</p>
+                <h1>Hi! I am <span>Navjot</span> Kaur.</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- About--------------------------------------------------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/mypic.png" id="ABOUT" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a dedicated and results-oriented professional with a strong passion for problem-solving 
+                        and innovation. With a background in web development, I bring a unique blend of relevant skills 
+                        or attributes, e.g., creativity, analytical thinking, teamwork. </p>
+                </div>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>App Development</span><br>Building Android/iOS apps</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023- Current</span><br>Full Stack Web Development</li>
+                    </ul>
+                </div>
+           </div>
+        </div>
+    </div>
+
+    <!-- Services ------------------------------------------------------------------------------ -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p> Web design is the art of creating visually appealing and user-friendly websites. </p>
+                    <a href="#">Learn More!</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p> UI/UX design focuses on optimizing user interactions and enhancing visual elements to create seamless and enjoyable digital experiences.</p>
+                    <a href="#">Learn More!</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>App development involves designing, coding, and testing software applications for various platforms</p>
+                    <a href="#">Learn More!</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio---------------------------------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1> 
+            <div id="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" > 
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the entire world!</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                   <img src="images/work-2.png" > 
+                   <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The Music app connects you to the entire world!</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+                </div>
+
+                <div class="work">
+                     <img src="images/work-3.png" > 
+                     <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The Online Shopping app connects you to the entire world!</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+<!-- Contact---------------------------------------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>contact@example.com</p>
+                <p><i class="fa-solid fa-phone"></i>0123456789</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form id="contactForm">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="tel" name="phone" placeholder="Your Phone Number" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                    <button type="reset" class="btn btn2">Reset</button>
+                </form>
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <footer>
+        <div class="copyright">
+            <p>Copyright  © Navjot Kaur 2023</p>
+        </div>
+    </footer>
+</div>
+
+
+<script src="index.js"></script>    
+</body>
+</html>
